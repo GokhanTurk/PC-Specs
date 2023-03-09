@@ -1,6 +1,5 @@
-$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object 
-System.Text.UTF8Encoding
-$env:LC_ALL='C.UTF-8 with BOM'
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::InputEncoding = [System.Text.Encoding]::UTF8
 net use \\10.2.11.25
 [string]$path="\\10.2.11.25\Sağlık Yerleşkesi Evraklar\ENVANTER\Zimmet\$env:UserName" + ".txt"
 Write-Output "Bilgisayar Adi\Kullanici" | Out-File -FilePath $path -Append
