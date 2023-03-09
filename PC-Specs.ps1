@@ -1,6 +1,6 @@
 net use \\10.2.11.25
 [string]$path="\\10.2.11.25\Sağlık Yerleşkesi Evraklar\ENVANTER\Zimmet\$env:UserName" + ".txt"
-$path -replace ' ', '` '
+$path = $path -replace ' ', '` '
 Write-Output "Bilgisayar Adi\Kullanici" | Out-File -FilePath $path -Append
 hostname | Out-File -FilePath $path -Append
 whoami | Out-File -FilePath $path -Append
