@@ -1,7 +1,5 @@
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-[Console]::InputEncoding = [System.Text.Encoding]::UTF8
 net use \\10.2.11.25
-[string]$path="\\10.2.11.25\Sağlık Yerleşkesi Evraklar\ENVANTER\Zimmet\$env:UserName" + ".txt"
+[string]$path="\\10.2.11.25\Saglik_Yerleskesi_Evraklar\ENVANTER\Zimmet\$env:UserName" + ".txt"
 Write-Output "Bilgisayar Adi\Kullanici" | Out-File -FilePath $path -Append
 hostname | Out-File -FilePath $path -Append
 whoami | Out-File -FilePath $path -Append
