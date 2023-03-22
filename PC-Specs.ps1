@@ -14,5 +14,3 @@ Write-Output "Disk Boyutu" | Out-File -FilePath $path -Append
 wmic /append:$path diskdrive get size
 Write-Output RAM | Out-File -FilePath $path -Append
 wmic /append:$path computersystem get totalphysicalmemory
-pause
-exit
