@@ -1,5 +1,5 @@
 net use \\10.2.11.25
-[string]$path="\\10.2.11.25\DISBTORTAK\Saglik_Yerleskesi_Evraklar\ENVANTER\Zimmet\$env:UserName" + ".txt"
+[string]$path="\\10.2.11.25\DISBTORTAK\Saglik_Yerleskesi_Evraklar\ENVANTER\0-Zimmet\$env:UserName" + ".txt"
 Write-Output "Bilgisayar Adi" | Out-File -FilePath $path -Append
 hostname | Out-File -FilePath $path -Append
 Write-Output "Kullanici Adi" | Out-File -FilePath $path -Append
